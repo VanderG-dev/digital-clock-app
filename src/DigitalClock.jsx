@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
 
+import FormatSwitcher from "./FormatSwitcher";
+
 function DigitalClock() {
   const [time, setTime] = useState(new Date());
+
+  const [format, setFormat] = useState(24);
 
   useEffect(() => {
     const timeInterval = setInterval(() => {
@@ -33,8 +37,11 @@ function DigitalClock() {
 
   return (
     <>
+      <div className="buttons-container">
+        <FormatSwitcher format={setFormat} />
+      </div>
       <div className="clock">
-        <div className="numbers">{formatTime("24")}</div>
+        <div className="numbers">{formatTime(format)}</div>
       </div>
     </>
   );

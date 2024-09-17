@@ -29,3 +29,27 @@ body {
   font-size: 50px;
   font-family: "Times New Roman", Times, serif;
 }
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.format-btn {
+  background-color: rgba(0, 0, 0, 0.464);
+  border: 0px;
+  width: auto;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.format-btn:hover {
+  background-color: rgba(0, 0, 0, 0.512);
+}
